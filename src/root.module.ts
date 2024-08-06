@@ -2,16 +2,14 @@ import { Module } from '@nestjs/common';
 import { BookModule } from './book/book.module';
 import { UsersModule } from './users/users.module';
 
-
-
 @Module({
-  imports: [ BookModule, UsersModule  ],
+  imports: [BookModule, UsersModule],
   controllers: [],
   providers: [],
-  exports:[]
+  exports: []
 })
 export class AppModule {
-constructor(){
-  console.log('root module');
-}
+  constructor() {
+    console.log('entry point of application');
+  }
 }
